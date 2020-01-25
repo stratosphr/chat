@@ -1,9 +1,10 @@
 require('./bootstrap')
 
-const Vue = require('vue')
-const Vuetify = require('vuetify')
-import App from './components/App'
+import Vue     from 'vue'
+import Vuetify from 'vuetify'
+import App     from './components/App'
 
+Vue.config.productionTip = false
 Vue.use(Vuetify)
 
 new Vue({

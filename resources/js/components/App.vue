@@ -1,11 +1,15 @@
 <template>
-    <p>Hello, world</p>
+    <p>Hello, worlds</p>
 </template>
+
 <script>
-	export default {
-	    name: 'App',
-	    mounted() {
-            console.log('hello')
+    export default {
+        name: 'App',
+
+        created() {
+            axios.get('data').then(data => {
+                console.log(data.data)
+            })
         }
     }
 </script>
